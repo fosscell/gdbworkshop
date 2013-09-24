@@ -62,6 +62,8 @@ watch - Used to set watchpoints on variables
 
 print - Used to print the value of variables
 
+	Example :
+	
 	(gdb) print i
 		print the value of the variable i
 	
@@ -69,7 +71,9 @@ print - Used to print the value of variables
 		print the value pointed to by ptr (if ptr is a pointer)
 		
 set - Used to set values for variables
-
+	
+	Example :
+	
 	(gdb) set i = 10
 		set the value of the variable i to 10
 
