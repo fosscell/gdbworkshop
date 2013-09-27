@@ -1,4 +1,3 @@
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -12,9 +11,10 @@ foo_len (const char *s)
 int
 main (int argc, char *argv[])
 {
-  char a[10];
-	a[11]='a';
-	printf("%s\n",a);
+  const char *a = NULL;
+ 
+  printf ("size of a = %d\n", foo_len (a));
+ 
   exit (0);
-  
 }
+

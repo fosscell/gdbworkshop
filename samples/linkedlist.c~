@@ -68,6 +68,13 @@ void pop() {
 
     int num;
 
+    /*if(top==NULL) {
+        printf("\nNo Element present!!");
+        printf("\nPress <enter> key to continue...");
+        getchar();
+        return;
+    }*/
+
     num = top->val;	
     top = top->next;	//Deleting the top element
 
