@@ -6,7 +6,7 @@ struct node {
     struct node *next;
 };
 
-    struct node * top;
+struct node * top;
 
 void push();
 void pop();
@@ -19,11 +19,11 @@ int main() {
 
     do {
         printf("\nMain Menu\n"
-               "1.Push\n"
-               "2.Pop\n"
-		"3.Print\n"
-               "4.Quit\n"
-               "Enter your choice : ");
+                "1.Push\n"
+                "2.Pop\n"
+                "3.Print\n"
+                "4.Quit\n"
+                "Enter your choice : ");
 
         scanf("%d", &choice);
         getchar(); //consume the <Enter> key press after inputting number
@@ -35,7 +35,10 @@ int main() {
 
             case 2 : pop();
                      break;
-	    case 3 : print(); break;
+
+            case 3 : print(); 
+                     break;
+
             case 4 : printf("\nExiting...\n");
                      break;
 
@@ -44,7 +47,7 @@ int main() {
         }
     }while(choice!=4);
 }
-                      
+
 void push() {
 
     int num;
@@ -61,7 +64,7 @@ void push() {
     printf("\nSuccessfully Added the number %d\n", top->val);
     printf("Press <enter> key to continue...");
     getchar();
-    
+
 }
 
 void pop() {
@@ -76,18 +79,20 @@ void pop() {
     getchar();
 }
 
-void print()
-{
-	if(top == NULL)
-	{
-		printf("Linked list is empty\n");
-		return;
-	}
-	struct node *temp = top;
-	while(temp != NULL)
-	{
-		printf("Value = %d\n",temp->val);
-		temp = temp->next;
-	}
+void print() {
+    
+    struct node *temp = top;
+    
+    printf("\nStack Contents : \n");
+
+    while(temp != NULL)
+    {
+        printf("Value = %d\n",temp->val);
+        temp = temp->next;
+    }
+    
+    printf("\nPress <enter> key to continue...");
+    getchar();
+
 }	
-		
+
