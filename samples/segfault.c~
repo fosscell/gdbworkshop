@@ -1,0 +1,20 @@
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+ 
+size_t
+foo_len (const char *s)
+{
+  return strlen (s);
+}
+ 
+int
+main (int argc, char *argv[])
+{
+  char a[10];
+	a[11]='a';
+	printf("%s\n",a);
+  exit (0);
+  
+}
