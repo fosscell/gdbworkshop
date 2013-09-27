@@ -12,8 +12,8 @@ This repo contains all the keynotes and sample test cases used in the GDB workso
     
 Resources:
 
-    [GDB Man Page](gdbman.md)
+[GDB Man Page](gdbman.md)
 
-    [Causes of 'Segmentation Faults'](causes_segfault.md)
+[Causes of 'Segmentation Faults'](causes_segfault.md)
 
 The workshop covers the basic aspects and usage of GDB. For more informtaion on GDB visit: http://www.sourceware.org/gdb/
